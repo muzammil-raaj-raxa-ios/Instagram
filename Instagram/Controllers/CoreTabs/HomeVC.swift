@@ -6,14 +6,29 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeVC: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    
+    
   }
 
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    handleNotAuthenticated()
+  }
+  
+  private func handleNotAuthenticated() {
+    if Auth.auth().currentUser == nil {
+      // Goto Login VC
+      let loginVC = LoginVC()
+      loginVC.modalPresentationStyle = .fullScreen
+      present(loginVC, animated: false)
+    }
+  }
 
 }
 
