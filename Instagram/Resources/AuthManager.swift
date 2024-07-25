@@ -23,9 +23,11 @@ public class AuthManager {
           DatabaseManager.shared.storeNewUser(with: email, username: username) { stored in
             if stored {
               completion(true)
+              print("user info stored SUCCESS")
               return
             } else {
               completion(false)
+              print("user info stored SUCCESS")
               return
             }
           }
@@ -37,11 +39,10 @@ public class AuthManager {
   }
   
   
-  
   public func loginUser(username: String?, email: String?, password: String, completion: @escaping (Bool) -> Void) {
     if let email = email {
       Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-        guard authResult != nil, error != nil else {
+        guard authResult != nil, error == nil else {
           completion(false)
           return
         }
@@ -52,4 +53,18 @@ public class AuthManager {
       print(username)
     }
   }
+  
+  
+  public func logOut(completion: @escaping (Bool) -> Void) {
+    do {
+      try Auth.auth().signOut()
+      completion(true)
+      return
+    } catch {
+      print(error)
+      completion(false)
+      return
+    }
+  }
+  
 }
