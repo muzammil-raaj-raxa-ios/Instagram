@@ -31,6 +31,10 @@
 		367E226D2C4FC07E00331354 /* PostEditorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E226C2C4FC07E00331354 /* PostEditorVC.swift */; };
 		367E226F2C4FC09900331354 /* PublishPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E226E2C4FC09900331354 /* PublishPostVC.swift */; };
 		3698B1252C4FD29B006E03DD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698B1242C4FD29B006E03DD /* Extensions.swift */; };
+		36F3487A2C53A836002331D4 /* FeedPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F348792C53A836002331D4 /* FeedPostsCell.swift */; };
+		36F3487D2C53ABF4002331D4 /* FeedPostsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3487C2C53ABF4002331D4 /* FeedPostsHeaderCell.swift */; };
+		36F3487F2C53AC07002331D4 /* FeedPostsActionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3487E2C53AC07002331D4 /* FeedPostsActionsCell.swift */; };
+		36F348812C53AC1E002331D4 /* FeedPostsLikeCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F348802C53AC1E002331D4 /* FeedPostsLikeCommentCell.swift */; };
 		850596BB52F93F4D528608BE /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D2C8B7DAA998DA5C3ADBED /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +65,10 @@
 		367E226C2C4FC07E00331354 /* PostEditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorVC.swift; sourceTree = "<group>"; };
 		367E226E2C4FC09900331354 /* PublishPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostVC.swift; sourceTree = "<group>"; };
 		3698B1242C4FD29B006E03DD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		36F348792C53A836002331D4 /* FeedPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostsCell.swift; sourceTree = "<group>"; };
+		36F3487C2C53ABF4002331D4 /* FeedPostsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostsHeaderCell.swift; sourceTree = "<group>"; };
+		36F3487E2C53AC07002331D4 /* FeedPostsActionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostsActionsCell.swift; sourceTree = "<group>"; };
+		36F348802C53AC1E002331D4 /* FeedPostsLikeCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostsLikeCommentCell.swift; sourceTree = "<group>"; };
 		63D2C8B7DAA998DA5C3ADBED /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C2E48CE691531E658F40F3 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		DE6795C1E58000DE131F6369 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +134,7 @@
 		362843502C4A462E0001C828 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36F348782C53A814002331D4 /* Cells */,
 				367E22522C4FBE4800331354 /* Storyboards */,
 			);
 			path = Views;
@@ -198,6 +207,25 @@
 				367E22602C4FBF9700331354 /* RegistrationVC.swift */,
 			);
 			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		36F348782C53A814002331D4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				36F3487B2C53ABC6002331D4 /* HomeFeed */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		36F3487B2C53ABC6002331D4 /* HomeFeed */ = {
+			isa = PBXGroup;
+			children = (
+				36F348792C53A836002331D4 /* FeedPostsCell.swift */,
+				36F3487C2C53ABF4002331D4 /* FeedPostsHeaderCell.swift */,
+				36F3487E2C53AC07002331D4 /* FeedPostsActionsCell.swift */,
+				36F348802C53AC1E002331D4 /* FeedPostsLikeCommentCell.swift */,
+			);
+			path = HomeFeed;
 			sourceTree = "<group>";
 		};
 		7F396DC99B83CD36C27B3C8E /* Pods */ = {
@@ -333,10 +361,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F3487F2C53AC07002331D4 /* FeedPostsActionsCell.swift in Sources */,
 				367E226D2C4FC07E00331354 /* PostEditorVC.swift in Sources */,
 				360604D72C4FCCEA0011B0E1 /* AuthManager.swift in Sources */,
 				3628433F2C4A45F60001C828 /* HomeVC.swift in Sources */,
+				36F3487A2C53A836002331D4 /* FeedPostsCell.swift in Sources */,
 				367E22582C4FBEDF00331354 /* NotificationsVC.swift in Sources */,
+				36F348812C53AC1E002331D4 /* FeedPostsLikeCommentCell.swift in Sources */,
 				367E225F2C4FBF8B00331354 /* LoginVC.swift in Sources */,
 				360604D52C4FCC020011B0E1 /* DatabaseManager.swift in Sources */,
 				367E226F2C4FC09900331354 /* PublishPostVC.swift in Sources */,
@@ -344,6 +375,7 @@
 				367E22632C4FBFD200331354 /* PostVC.swift in Sources */,
 				360604D92C4FCD830011B0E1 /* StorageManager.swift in Sources */,
 				367E22692C4FC03C00331354 /* FollowListVC.swift in Sources */,
+				36F3487D2C53ABF4002331D4 /* FeedPostsHeaderCell.swift in Sources */,
 				367E226B2C4FC05100331354 /* SearchVC.swift in Sources */,
 				367E22672C4FC00C00331354 /* SettingsVC.swift in Sources */,
 				367E22612C4FBF9700331354 /* RegistrationVC.swift in Sources */,
@@ -511,8 +543,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,8 +572,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
