@@ -11,6 +11,7 @@
 		360604D52C4FCC020011B0E1 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360604D42C4FCC020011B0E1 /* DatabaseManager.swift */; };
 		360604D72C4FCCEA0011B0E1 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360604D62C4FCCEA0011B0E1 /* AuthManager.swift */; };
 		360604D92C4FCD830011B0E1 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360604D82C4FCD830011B0E1 /* StorageManager.swift */; };
+		361DDFAC2C57BAD600586F1A /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361DDFAB2C57BAD600586F1A /* FormCell.swift */; };
 		3628433B2C4A45F60001C828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3628433A2C4A45F60001C828 /* AppDelegate.swift */; };
 		3628433D2C4A45F60001C828 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3628433C2C4A45F60001C828 /* SceneDelegate.swift */; };
 		3628433F2C4A45F60001C828 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3628433E2C4A45F60001C828 /* HomeVC.swift */; };
@@ -43,6 +44,7 @@
 		360604D42C4FCC020011B0E1 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		360604D62C4FCCEA0011B0E1 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		360604D82C4FCD830011B0E1 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		361DDFAB2C57BAD600586F1A /* FormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCell.swift; sourceTree = "<group>"; };
 		362843372C4A45F60001C828 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3628433A2C4A45F60001C828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3628433C2C4A45F60001C828 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				36F3487B2C53ABC6002331D4 /* HomeFeed */,
+				361DDFAB2C57BAD600586F1A /* FormCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				36F3487F2C53AC07002331D4 /* FeedPostsActionsCell.swift in Sources */,
 				367E226D2C4FC07E00331354 /* PostEditorVC.swift in Sources */,
 				360604D72C4FCCEA0011B0E1 /* AuthManager.swift in Sources */,
+				361DDFAC2C57BAD600586F1A /* FormCell.swift in Sources */,
 				3628433F2C4A45F60001C828 /* HomeVC.swift in Sources */,
 				36F3487A2C53A836002331D4 /* FeedPostsCell.swift in Sources */,
 				367E22582C4FBEDF00331354 /* NotificationsVC.swift in Sources */,

@@ -10,18 +10,22 @@ import UIKit
 struct EditProfileFormModel {
   let label: String
   let placeholder: String
-  var value: String
+  var value: String?
 }
 
-final class EditProfileVC: UIViewController {
+final class EditProfileVC: UIViewController, FormCellDelegate {
+  func formTblViewCell(_ cell: FormCell, didUpdateField updatedModel: EditProfileFormModel) {
+    print(updatedModel.value ?? "")
+  }
   
+
   private let tableview: UITableView = {
     let tableview = UITableView()
-    tableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    tableview.register(FormCell.self, forCellReuseIdentifier: FormCell.identifier)
     return tableview
   }()
   
-  private let models = [[EditProfileFormModel]]()
+  private var models = [[EditProfileFormModel]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,9 +50,24 @@ final class EditProfileVC: UIViewController {
     
     tableview.frame = view.bounds
   }
+
   
   private func configureModels() {
+    let section1Lbl = ["Name", "Username", "Bio"]
+    var section1 = [EditProfileFormModel]()
+    for label in section1Lbl {
+      let model = EditProfileFormModel(label: label, placeholder: "Enter \(label)...", value: nil)
+      section1.append(model)
+    }
+    models.append(section1)
     
+    let section2Lbl = ["Email", "Phone", "Gender"]
+    var section2 = [EditProfileFormModel]()
+    for label in section2Lbl {
+      let model = EditProfileFormModel(label: label, placeholder: "Enter \(label)...", value: nil)
+      section2.append(model)
+    }
+    models.append(section2)
   }
   
   private func createTblHeaderView() -> UIView {
@@ -74,7 +93,7 @@ final class EditProfileVC: UIViewController {
   }
   
   @objc private func didTapSaveBtn() {
-    
+    dismiss(animated: true, completion: nil)
   }
   
   @objc private func didTapCancelBtn() {
@@ -108,9 +127,18 @@ extension EditProfileVC: UITableViewDataSource  {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-    cell.textLabel?.text = "Hello World"
+    let model = models[indexPath.section][indexPath.row]
+    let cell = tableView.dequeueReusableCell(withIdentifier: FormCell.identifier, for: indexPath) as! FormCell
+    cell.configure(with: model)
+    cell.delegate = self
     return cell
+  }
+  
+  func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    guard section == 1 else {
+        return nil
+    }
+    return "Private Information"
   }
   
 }
