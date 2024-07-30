@@ -14,10 +14,6 @@ struct EditProfileFormModel {
 }
 
 final class EditProfileVC: UIViewController, FormCellDelegate {
-  func formTblViewCell(_ cell: FormCell, didUpdateField updatedModel: EditProfileFormModel) {
-    print(updatedModel.value ?? "")
-  }
-  
 
   private let tableview: UITableView = {
     let tableview = UITableView()
@@ -49,6 +45,11 @@ final class EditProfileVC: UIViewController, FormCellDelegate {
     super.viewDidLayoutSubviews()
     
     tableview.frame = view.bounds
+  }
+  
+  func formTblViewCell(_ cell: FormCell, didUpdateField updatedModel: EditProfileFormModel) {
+    
+    print(updatedModel.value ?? "")
   }
 
   
