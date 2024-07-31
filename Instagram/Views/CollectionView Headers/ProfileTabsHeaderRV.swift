@@ -9,4 +9,15 @@ import UIKit
 
 class ProfileTabsHeaderRV: UICollectionReusableView {
   static let identifier = "ProfileTabsHeaderRV"
+  
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    
+    backgroundColor = .orange
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+  
 }
