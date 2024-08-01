@@ -18,6 +18,7 @@
 		362843422C4A45F60001C828 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 362843412C4A45F60001C828 /* Base */; };
 		362843442C4A45F70001C828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362843432C4A45F70001C828 /* Assets.xcassets */; };
 		362843472C4A45F70001C828 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 362843462C4A45F70001C828 /* Base */; };
+		3632CF1B2C5BA6B800B7C066 /* UserFollowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632CF1A2C5BA6B800B7C066 /* UserFollowCell.swift */; };
 		367E22542C4FBEBB00331354 /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E22532C4FBEBB00331354 /* ExploreVC.swift */; };
 		367E22562C4FBECB00331354 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E22552C4FBECB00331354 /* CameraVC.swift */; };
 		367E22582C4FBEDF00331354 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E22572C4FBEDF00331354 /* NotificationsVC.swift */; };
@@ -57,6 +58,7 @@
 		362843432C4A45F70001C828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		362843462C4A45F70001C828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		362843482C4A45F70001C828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3632CF1A2C5BA6B800B7C066 /* UserFollowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowCell.swift; sourceTree = "<group>"; };
 		367E22532C4FBEBB00331354 /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
 		367E22552C4FBECB00331354 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		367E22572C4FBEDF00331354 /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				36F3487B2C53ABC6002331D4 /* HomeFeed */,
 				361DDFAB2C57BAD600586F1A /* FormCell.swift */,
 				36B23FAA2C58A89C00FA6FC5 /* PhotoCell.swift */,
+				3632CF1A2C5BA6B800B7C066 /* UserFollowCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				367E22672C4FC00C00331354 /* SettingsVC.swift in Sources */,
 				367E22612C4FBF9700331354 /* RegistrationVC.swift in Sources */,
 				36B23FAF2C58A97200FA6FC5 /* ProfileTabsHeaderRV.swift in Sources */,
+				3632CF1B2C5BA6B800B7C066 /* UserFollowCell.swift in Sources */,
 				3628433B2C4A45F60001C828 /* AppDelegate.swift in Sources */,
 				3698B1252C4FD29B006E03DD /* Extensions.swift in Sources */,
 				367E22562C4FBECB00331354 /* CameraVC.swift in Sources */,

@@ -114,6 +114,8 @@ extension ProfileVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     if indexPath.section == 1 {
       let tabControlHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfileTabsHeaderRV.identifier, for: indexPath) as! ProfileTabsHeaderRV
       
+      tabControlHeader.delegate = self
+      
       return tabControlHeader
     }
     
@@ -128,7 +130,7 @@ extension ProfileVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
       return CGSize(width: collectionView.width, height: collectionView.height / 3)
     }
     
-    return CGSize(width: collectionView.width, height: 65)
+    return CGSize(width: collectionView.width, height: 50)
 
   }
   
@@ -140,14 +142,14 @@ extension ProfileVC: ProfileInfoHeaderRVDelegate {
   }
   
   func profileHeaderDidTapFollowersBtn(_ header: ProfileInfoHeaderRV) {
-    let vc = ListVC()
+    let vc = ListVC(data: ["Joe", "Joe", "Joe", "Joe"])
     vc.title = "Followers"
     vc.navigationItem.largeTitleDisplayMode = .never
     navigationController?.pushViewController(vc, animated: true)
   }
   
   func profileHeaderDidTapFollowingBtn(_ header: ProfileInfoHeaderRV) {
-    let vc = ListVC()
+    let vc = ListVC(data: ["Don", "Don", "Don", "Don"])
     vc.title = "Following"
     vc.navigationItem.largeTitleDisplayMode = .never
     navigationController?.pushViewController(vc, animated: true)
@@ -157,6 +159,18 @@ extension ProfileVC: ProfileInfoHeaderRVDelegate {
     let vc = EditProfileVC()
     vc.title = "Edit Profile"
     present(UINavigationController(rootViewController: vc), animated: true)
+  }
+  
+  
+}
+
+extension ProfileVC: ProfileTabsHeaderRVDelegate {
+  func didTapGridBtnTab() {
+  
+  }
+  
+  func didTapTaggedBtnTab() {
+    
   }
   
   
