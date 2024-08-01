@@ -27,7 +27,7 @@
 		367E22632C4FBFD200331354 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E22622C4FBFD200331354 /* PostVC.swift */; };
 		367E22652C4FBFF000331354 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E22642C4FBFF000331354 /* EditProfileVC.swift */; };
 		367E22672C4FC00C00331354 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E22662C4FC00C00331354 /* SettingsVC.swift */; };
-		367E22692C4FC03C00331354 /* FollowListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E22682C4FC03C00331354 /* FollowListVC.swift */; };
+		367E22692C4FC03C00331354 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E22682C4FC03C00331354 /* ListVC.swift */; };
 		367E226B2C4FC05100331354 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E226A2C4FC05100331354 /* SearchVC.swift */; };
 		367E226D2C4FC07E00331354 /* PostEditorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E226C2C4FC07E00331354 /* PostEditorVC.swift */; };
 		367E226F2C4FC09900331354 /* PublishPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E226E2C4FC09900331354 /* PublishPostVC.swift */; };
@@ -66,7 +66,7 @@
 		367E22622C4FBFD200331354 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		367E22642C4FBFF000331354 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		367E22662C4FC00C00331354 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
-		367E22682C4FC03C00331354 /* FollowListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowListVC.swift; sourceTree = "<group>"; };
+		367E22682C4FC03C00331354 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		367E226A2C4FC05100331354 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		367E226C2C4FC07E00331354 /* PostEditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorVC.swift; sourceTree = "<group>"; };
 		367E226E2C4FC09900331354 /* PublishPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostVC.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				367E226E2C4FC09900331354 /* PublishPostVC.swift */,
 				367E22662C4FC00C00331354 /* SettingsVC.swift */,
 				367E22622C4FBFD200331354 /* PostVC.swift */,
-				367E22682C4FC03C00331354 /* FollowListVC.swift */,
+				367E22682C4FC03C00331354 /* ListVC.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -399,7 +399,7 @@
 				367E225A2C4FBEEB00331354 /* ProfileVC.swift in Sources */,
 				367E22632C4FBFD200331354 /* PostVC.swift in Sources */,
 				360604D92C4FCD830011B0E1 /* StorageManager.swift in Sources */,
-				367E22692C4FC03C00331354 /* FollowListVC.swift in Sources */,
+				367E22692C4FC03C00331354 /* ListVC.swift in Sources */,
 				36F3487D2C53ABF4002331D4 /* FeedPostsHeaderCell.swift in Sources */,
 				367E226B2C4FC05100331354 /* SearchVC.swift in Sources */,
 				367E22672C4FC00C00331354 /* SettingsVC.swift in Sources */,

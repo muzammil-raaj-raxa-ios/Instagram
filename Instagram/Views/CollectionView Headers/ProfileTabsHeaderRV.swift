@@ -13,7 +13,7 @@ class ProfileTabsHeaderRV: UICollectionReusableView {
   override init(frame: CGRect) {
     super.init(frame: frame)
     
-    backgroundColor = .orange
+    backgroundColor = .systemBackground
   }
   
   required init?(coder: NSCoder) {
